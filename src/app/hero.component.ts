@@ -13,7 +13,7 @@ import { Hero } from './hero';
   standalone: true,
   templateUrl: './hero.component.html',
   imports: [FormsModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroComponent implements AfterViewChecked {
   @Input() hero!: Hero;

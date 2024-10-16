@@ -19,15 +19,15 @@ import { SalesTaxService } from './sales-tax.service';
   imports: [NgIf, CurrencyPipe],
 })
 export class SalesTaxComponent implements DoCheck {
-  constructor(private salesTaxService: SalesTaxService) {}
+  //constructor(private salesTaxService: SalesTaxService) {}
 
-  /*constructor(
+  constructor(
     private renderer: Renderer2,
     private el: ElementRef,
     private salesTaxService: SalesTaxService
-  ) {}*/
+  ) {}
 
-  /*ngOnInit() {
+  ngOnInit() {
     this.renderer.listen(
       this.el.nativeElement,
       'mousemove',
@@ -35,7 +35,7 @@ export class SalesTaxComponent implements DoCheck {
         console.log('mouse moved');
       }
     );
-  }*/
+  }
 
   getTax(value: string | number) {
     return this.salesTaxService.getVAT(value);
